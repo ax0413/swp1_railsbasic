@@ -1,1 +1,343 @@
 <h1>baseball</h1>
+<h2>KBO league</h2>
+<table cellspacing="0" cellpadding="0">
+            <caption>선수기록순위 테이블</caption>
+            <thead>
+            <tr>
+                <th>
+                    <div class="rank">
+                        <strong><span class="blind">순위</span></strong>
+                    </div>
+                </th>
+                <th>
+                    <div class="team">
+                        <strong><span class="blind">팀</span></strong>
+                    </div>
+                </th>
+                <th>
+                    <div class="gcnt_s">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','gameCount');">
+                            <strong id="regularTeamRecordList_gameCount"><span class="blind">경기수</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="wpnt">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','won');">
+                            <!-- [D]정렬기능 on,off시 sort클래스 추가, 선택된 카테고리 활성화 강조 테두리는 table종료 태그 밑에 추가하였음. -->
+                            <strong id="regularTeamRecordList_won"><span class="blind">승</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="lpnt">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','lost');">
+                            <strong id="regularTeamRecordList_lost"><span class="blind">패</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="dpnt">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','drawn');">
+                            <strong id="regularTeamRecordList_drawn"><span class="blind">무</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="wnrt">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','wra');">
+                            <strong class="sort"><span id="regularTeamRecordList_wra" class="blind">승률</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="wlpnt">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','winDiff');">
+                            <strong><span id="regularTeamRecordList_winDiff" class="blind">게임차</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="streak">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','streak');">
+                            <strong><span id="regularTeamRecordList_streak" class="blind">연속</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="onbase">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','bra')">
+                            <strong><span id="regularTeamRecordList_bra" class="blind">출루율</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="slugging">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','lra')">
+                            <strong><span id="regularTeamRecordList_lra" class="blind">장타율</span></strong>
+                        </a>
+                    </div>
+                </th>
+                <th>
+                    <div class="lately">
+                        <a href="javascript:sortByColumn('regularTeamRecordList','recentResult')">
+                            <strong><span id="regularTeamRecordList_recentResult" class="blind">최근 10경기</span></strong>
+                        </a>
+                    </div>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="regularTeamRecordList_table">
+            
+                <tr>
+                    <th><strong>1</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/SS.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'SS');">
+                                
+                            
+                            <span id="team_SS">삼성</span>
+                        </div>
+                    </td>
+                    <td><span>141</span></td>
+                    <td><span>85</span></td>
+                    <td><span>56</span></td>
+                    <td><span>0</span></td>
+                    <td><strong>0.603</strong></td>
+                    <td><span>0.0</span></td>
+                    <td><span>4패</span></td>
+                    <td><span>0.377</span></td>
+                    <td><span>0.471</span></td>
+                    <td class="last"><span>6승-4패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>2</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/NC.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'NC');">
+                                
+                            
+                            <span id="team_NC">NC</span>
+                        </div>
+                    </td>
+                    <td><span>140</span></td>
+                    <td><span>82</span></td>
+                    <td><span>56</span></td>
+                    <td><span>2</span></td>
+                    <td><strong>0.594</strong></td>
+                    <td><span>1.5</span></td>
+                    <td><span>3승</span></td>
+                    <td><span>0.368</span></td>
+                    <td><span>0.456</span></td>
+                    <td class="last"><span>6승-4패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>3</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/WO.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'WO');">
+                                
+                            
+                            <span id="team_WO">넥센</span>
+                        </div>
+                    </td>
+                    <td><span>141</span></td>
+                    <td><span>76</span></td>
+                    <td><span>64</span></td>
+                    <td><span>1</span></td>
+                    <td><strong>0.543</strong></td>
+                    <td><span>8.5</span></td>
+                    <td><span>2패</span></td>
+                    <td><span>0.374</span></td>
+                    <td><span>0.488</span></td>
+                    <td class="last"><span>4승-6패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>3</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/OB.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'OB');">
+                                
+                            
+                            <span id="team_OB">두산</span>
+                        </div>
+                    </td>
+                    <td><span>140</span></td>
+                    <td><span>76</span></td>
+                    <td><span>64</span></td>
+                    <td><span>0</span></td>
+                    <td><strong>0.543</strong></td>
+                    <td><span>8.5</span></td>
+                    <td><span>1패</span></td>
+                    <td><span>0.369</span></td>
+                    <td><span>0.435</span></td>
+                    <td class="last"><span>6승-4패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>5</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/SK.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'SK');">
+                                
+                            
+                            <span id="team_SK">SK</span>
+                        </div>
+                    </td>
+                    <td><span>141</span></td>
+                    <td><span>68</span></td>
+                    <td><span>71</span></td>
+                    <td><span>2</span></td>
+                    <td><strong>0.489</strong></td>
+                    <td><span>16.0</span></td>
+                    <td><span>3승</span></td>
+                    <td><span>0.349</span></td>
+                    <td><span>0.411</span></td>
+                    <td class="last"><span>7승-3패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>6</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/HH.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'HH');">
+                                
+                            
+                            <span id="team_HH">한화</span>
+                        </div>
+                    </td>
+                    <td><span>141</span></td>
+                    <td><span>67</span></td>
+                    <td><span>74</span></td>
+                    <td><span>0</span></td>
+                    <td><strong>0.475</strong></td>
+                    <td><span>18.0</span></td>
+                    <td><span>2승</span></td>
+                    <td><span>0.360</span></td>
+                    <td><span>0.407</span></td>
+                    <td class="last"><span>5승-5패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>7</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/HT.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'HT');">
+                                
+                            
+                            <span id="team_HT">KIA</span>
+                        </div>
+                    </td>
+                    <td><span>139</span></td>
+                    <td><span>66</span></td>
+                    <td><span>73</span></td>
+                    <td><span>0</span></td>
+                    <td><strong>0.475</strong></td>
+                    <td><span>18.0</span></td>
+                    <td><span>2승</span></td>
+                    <td><span>0.327</span></td>
+                    <td><span>0.395</span></td>
+                    <td class="last"><span>4승-6패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>8</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/LT.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'LT');">
+                                
+                            
+                            <span id="team_LT">롯데</span>
+                        </div>
+                    </td>
+                    <td><span>141</span></td>
+                    <td><span>65</span></td>
+                    <td><span>75</span></td>
+                    <td><span>1</span></td>
+                    <td><strong>0.464</strong></td>
+                    <td><span>19.5</span></td>
+                    <td><span>2패</span></td>
+                    <td><span>0.357</span></td>
+                    <td><span>0.446</span></td>
+                    <td class="last"><span>2승-8패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>9</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/LG.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'LG');">
+                                
+                            
+                            <span id="team_LG">LG</span>
+                        </div>
+                    </td>
+                    <td><span>140</span></td>
+                    <td><span>62</span></td>
+                    <td><span>76</span></td>
+                    <td><span>2</span></td>
+                    <td><strong>0.449</strong></td>
+                    <td><span>21.5</span></td>
+                    <td><span>1패</span></td>
+                    <td><span>0.339</span></td>
+                    <td><span>0.399</span></td>
+                    <td class="last"><span>7승-3패-0무</span></td>
+                </tr>
+            
+                <tr>
+                    <th><strong>10</strong></th>
+                    <td class="tm">
+                        <div>
+                            
+                                
+                                
+                                    <img src="http://dthumb.phinf.naver.net/?twidth=25&amp;theight=25&amp;opts=12&amp;qlt=100&amp;sharpen=true&amp;src=http://imgsports.naver.net/images/emblem/new/kbo/default/KT.png" width="25" height="25" alt="구단로고" onerror="javaScript:noTeamEmblemImg(this, 'team', 'KT');">
+                                
+                            
+                            <span id="team_KT">kt</span>
+                        </div>
+                    </td>
+                    <td><span>140</span></td>
+                    <td><span>51</span></td>
+                    <td><span>89</span></td>
+                    <td><span>0</span></td>
+                    <td><strong>0.364</strong></td>
+                    <td><span>33.5</span></td>
+                    <td><span>3패</span></td>
+                    <td><span>0.346</span></td>
+                    <td><span>0.403</span></td>
+                    <td class="last"><span>3승-7패-0무</span></td>
+                </tr>
+            
+            </tbody>
+        </table>
